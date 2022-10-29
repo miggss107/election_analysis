@@ -13,10 +13,6 @@ file_to_save = os.path.join("analysis", "county_totals.txt")
 # Initialize a total vote counter.
 total_votes = 0
 
-# Candidate Options and candidate votes.
-candidate_options = []
-candidate_votes = {}
-
 # 1: Create a county list and county votes dictionary.
 county_list = []
 county_votes = {}

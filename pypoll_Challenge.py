@@ -13,6 +13,10 @@ file_to_save = os.path.join("analysis", "county_totals.txt")
 # Initialize a total vote counter.
 total_votes = 0
 
+# Candidate Options and candidate votes.
+candidate_options = []
+candidate_votes = {}
+
 # 1: Create a county list and county votes dictionary.
 county_list = []
 county_votes = {}
@@ -144,6 +148,7 @@ with open(file_to_save, "w") as txt_file:
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"-------------------------\n")
     print(winning_candidate_summary)
 
     # Save the winning candidate's name to the text file
